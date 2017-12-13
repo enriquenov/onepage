@@ -1,0 +1,228 @@
+.toggle {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.toggle a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 32px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.toggle a.active {
+  color: #262626;
+}
+
+#navbar {
+	top:0px;
+  left: -25%;
+  right: 0px;
+  bottom: 0px;
+	position: fixed;
+  width: 25%;
+  height: 100%;
+	z-index:1;
+	background-color: #FFF;
+  transition: 0.5s;
+}
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+	font-family: verdana;
+	font-size: 1.8em;
+  margin: 5px auto;
+	padding: 5px 30px;
+  border-radius: 25px;
+	color: #262626;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+#navbar ul li a:hover, li .item.active {
+  background: tomato;
+  color: #FFF!important;
+}
+#navbar.active {
+  left: 0;
+  overflow: auto;
+}
+
+
+/*...........................................*/
+/* ..................PAGE 1..................*/
+/*...........................................*/
+
+
+.page1 {
+  background-image: url('../img/success1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page1 .box {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.page1 .box h1 {
+  font-size: 6em;
+  color: #DDD;
+}
+
+.page1 .box hr.red {
+  width: 100px;
+  border-color: #ef0d32;
+  border-width: 4px;
+  display: inline-block;
+}
+
+.page1 .box p {
+  color: #DDD;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.page1 .box button {
+  color: #DDD;
+  background-color: #ef0d32;
+  margin: 40px 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 10px 40px;
+  letter-spacing: 0.05em;
+}
+.page1 .box button:hover {
+  background-color: #fe1a3f;
+  color: #EEE;
+}
+
+.page1 .footer1 .left {
+  display: inline-block;
+}
+
+.page1 .footer1 .left p {
+
+}
+
+.page1 .footer1 .left p span {
+  padding: 5px 0;
+  border-bottom: 1px solid #FFF;
+}
+
+.page1 .footer1 .right {
+  display: inline-block;
+}
+
+.page1 .footer1 .right ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.page1 .footer1 .right ul li img {
+  width: 100px;
+  height: auto;
+}
+
+/*...........................................*/
+/* ..................PAGE 2..................*/
+/*...........................................*/
+
+.page2 {
+  color: #FFF;
+  background-color: #00adf2;
+}
+
+.page2 .left {
+  vertical-align: middle;
+  margin-left: 120px;
+  width: 30%;
+  display: inline-block;
+}
+
+.page2 .left h1 {
+  font-size: 4em;
+}
+
+.page2 .left hr {
+  width: 100px;
+  border-color: #FFF;
+  border-width: 4px;
+  display: inline-block;
+}
+
+.page2 .left p {
+  line-height: 1.8em;
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+}
+
+.page2 .left a {
+  text-transform: uppercase;
+  color: #FFF !important;
+  padding: 15px 60px;
+  border: 2px solid #FFF;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.page2 .left a:hover {
+  text-decoration: none;
+  background-color: #FFF;
+  color: #00adf2 !important;
+}
+
+.page2 .right {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30%;
+  height: 70%;
+  margin-left: 20%;
+  background-image: url('../img/iphone6.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.45);*/
+}
+
+/*...........................................*/
+/* ..................PAGE 3..................*/
+/*...........................................*/
+
+
+.page3-1 {
+  background-color: #ff943b;
+}
+
+.page3-2 {
+  background-color: #01cc99;
+}
+
+.page3-3 {
+  background-color: #076194;
+}
+
+.page4 {
+  background-color: #7c5cf4;
+}
+
+.page5 {
+  background-color: #FFF;
+}
