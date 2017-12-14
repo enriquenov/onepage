@@ -77,11 +77,13 @@
 }
 
 .page1 .box {
+  margin-top: 150px;
   margin-left: 120px;
   margin-right: 120px;
 }
 
 .page1 .box h1 {
+
   font-size: 6em;
   color: #DDD;
 }
@@ -217,7 +219,41 @@
 
 .page3-3 {
   background-color: #076194;
+  text-align: center;
 }
+.page3-3 .game-app, .page3-2 .ipad-game {
+  margin: 0 auto;
+  width: 40%;
+  height: 50%;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.page3-2 .ipad-game {
+  background-image: url('../img/ipad-game.png');
+  height: 100%;
+  background-position: center bottom;
+}
+
+.page3-3 .game-app {
+  background-image: url('../img/iphone-game.png');
+}
+
+.page3-3 .lorem {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.page3-3 .lorem p {
+  font-weight: 100;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/*...........................................*/
+/* ..................PAGE 4..................*/
+/*...........................................*/
 
 .page4 {
   background-color: #7c5cf4;
