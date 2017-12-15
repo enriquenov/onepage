@@ -53,8 +53,13 @@
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
+  transition: all 0.35s ease;
 }
-#navbar ul li a:hover, li .item.active {
+#navbar ul li a:hover {
+  background: dimgrey;
+  color: #FFF!important;
+}
+li .item.active {
   background: tomato;
   color: #FFF!important;
 }
@@ -78,12 +83,9 @@
 
 .page1 .box {
   margin-top: 150px;
-  margin-left: 120px;
-  margin-right: 120px;
 }
 
 .page1 .box h1 {
-
   font-size: 6em;
   color: #DDD;
 }
@@ -116,11 +118,15 @@
 }
 
 .page1 .footer1 .left {
+  vertical-align: middle;
   display: inline-block;
 }
 
 .page1 .footer1 .left p {
-
+  padding-top: 10px;
+  color: #EEE;
+  font-size: 1.2em;
+  font-weight: 100;
 }
 
 .page1 .footer1 .left p span {
@@ -129,6 +135,7 @@
 }
 
 .page1 .footer1 .right {
+  vertical-align: middle;
   display: inline-block;
 }
 
@@ -138,8 +145,8 @@
 }
 
 .page1 .footer1 .right ul li img {
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 50px;
 }
 
 /*...........................................*/
@@ -151,32 +158,30 @@
   background-color: #00adf2;
 }
 
-.page2 .left {
-  vertical-align: middle;
-  margin-left: 120px;
-  width: 30%;
-  display: inline-block;
+.page2 .left, .page3 .left {
+  padding-top: 15vh;
+  /*display: inline-block;*/
 }
 
-.page2 .left h1 {
+.page2 .left h1, .page3 .left h1 {
   font-size: 4em;
 }
 
-.page2 .left hr {
+.page2 .left hr, .page3 .left hr {
   width: 100px;
   border-color: #FFF;
   border-width: 4px;
   display: inline-block;
 }
 
-.page2 .left p {
+.page2 .left p, .page3 .left p {
   line-height: 1.8em;
   font-size: 1.2em;
   margin-bottom: 50px;
   letter-spacing: 0.03em;
 }
 
-.page2 .left a {
+.page2 .left a, .page3 .left a {
   text-transform: uppercase;
   color: #FFF !important;
   padding: 15px 60px;
@@ -185,21 +190,21 @@
   text-decoration: none;
 }
 
-.page2 .left a:hover {
+.page2 .left a:hover, .page3 .left a:hover {
   text-decoration: none;
   background-color: #FFF;
   color: #00adf2 !important;
 }
 
-.page2 .right {
+.page2 .right, .page3 .right {
   vertical-align: middle;
   display: inline-block;
-  width: 30%;
-  height: 70%;
+  width: 100%;
+  height: 60vh;
   margin-left: 20%;
   background-image: url('../img/iphone6.png');
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   /*box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.45);*/
 }
@@ -209,42 +214,46 @@
 /*...........................................*/
 
 
-.page3-1 {
+.page3, .page3 .left a {
+  color: #FFF;
   background-color: #ff943b;
 }
 
-.page3-2 {
+.page4 {
   background-color: #01cc99;
 }
 
-.page3-3 {
+.page5 {
   background-color: #076194;
   text-align: center;
 }
-.page3-3 .game-app, .page3-2 .ipad-game {
+
+.page5 .game-app, .page4 .ipad-game {
   margin: 0 auto;
-  width: 40%;
   height: 50%;
-  background-position: center;
-  background-size: 80%;
   background-repeat: no-repeat;
 }
-.page3-2 .ipad-game {
+.page4 .ipad-game {
   background-image: url('../img/ipad-game.png');
+  width: 60%;
   height: 100%;
-  background-position: center bottom;
+  background-size: 50%;
+  background-position: 100% 100%;
 }
 
-.page3-3 .game-app {
+.page5 .game-app {
   background-image: url('../img/iphone-game.png');
+  width: 40%;
+  background-size: 80%;
+  background-position: center;
 }
 
-.page3-3 .lorem {
+.page5 .lorem {
   width: 50%;
   margin: 0 auto;
 }
 
-.page3-3 .lorem p {
+.page5 .lorem p {
   font-weight: 100;
   color: #FFF;
   font-size: 16px;
@@ -254,11 +263,3 @@
 /*...........................................*/
 /* ..................PAGE 4..................*/
 /*...........................................*/
-
-.page4 {
-  background-color: #7c5cf4;
-}
-
-.page5 {
-  background-color: #FFF;
-}
