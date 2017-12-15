@@ -41,6 +41,15 @@ $(document).ready(function(){
     $('.toggle a').toggleClass('active');
   })
 
+});
+
+
+$(window).on('load', function() {
+	/*------------------
+		Preloader
+	--------------------*/
+	$(".loader").fadeOut();
+	$("#preloader").delay(400).fadeOut("slow");
 
 
 });
