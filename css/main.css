@@ -60,7 +60,6 @@
   left: 40px;
   z-index: 2;
 }
-
 .toggle a {
   text-decoration: none;
   color: #FFF;
@@ -68,10 +67,49 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
-
 .toggle a.active {
   color: #262626;
 }
+.toggle a i {
+  transition: all 0.5 ease-in-out;
+}
+.toggle a i:hover {
+  transform: scale(1.1);
+}
+.logo {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 2;
+}
+.logo a {
+  text-decoration: none;
+  color: #ef0d32;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 1px 1px #262626;
+}
+
+.logo a p:hover {
+  animation: roll 3s ease;
+  transform: rotate(30deg);
+  animation-fill-mode: forwards;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 #navbar {
 	top:0px;
