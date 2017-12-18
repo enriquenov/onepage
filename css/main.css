@@ -51,7 +51,7 @@
 }
 
 /*------------------
-	PAGES CSS
+	NAVIGATION BAR + TOGGLE || LOGO
 --------------------*/
 
 .toggle {
@@ -110,7 +110,6 @@
   }
 }
 
-
 #navbar {
 	top:0px;
   left: -25%;
@@ -139,7 +138,7 @@
 
 #navbar ul li a {
 	font-family: verdana;
-	font-size: 1.8em;
+	font-size: 1.2em;
   margin: 5px auto;
 	padding: 5px 30px;
   border-radius: 25px;
@@ -150,7 +149,7 @@
   transition: all 0.35s ease;
 }
 #navbar ul li a:hover {
-  background: dimgrey;
+  background: #C0C0C0;
   color: #FFF!important;
 }
 li .item.active {
@@ -244,7 +243,7 @@ li .item.active {
 }
 
 /*...........................................*/
-/* ..................PAGE 2..................*/
+/* ..................PAGE 2, 3 and 4..................*/
 /*...........................................*/
 
 .page2 {
@@ -257,25 +256,25 @@ li .item.active {
   /*display: inline-block;*/
 }
 
-.page2 .left h1, .page3 .left h1 {
+.page2 .left h1, .page3 .left h1, .page4 .left h1 {
   font-size: 4em;
 }
 
-.page2 .left hr, .page3 .left hr {
+.page2 .left hr, .page3 .left hr, .page4 .left hr {
   width: 100px;
   border-color: #FFF;
   border-width: 4px;
   display: inline-block;
 }
 
-.page2 .left p, .page3 .left p {
+.page2 .left p, .page3 .left p, .page4 .left p {
   line-height: 1.8em;
   font-size: 1.2em;
   margin-bottom: 50px;
   letter-spacing: 0.03em;
 }
 
-.page2 .left a, .page3 .left a {
+.page2 .left a, .page3 .left a, .page4 .left a {
   text-transform: uppercase;
   color: #FFF !important;
   padding: 15px 60px;
@@ -284,7 +283,7 @@ li .item.active {
   text-decoration: none;
 }
 
-.page2 .left a:hover, .page3 .left a:hover {
+.page2 .left a:hover, .page3 .left a:hover, .page4 .left a:hover {
   text-decoration: none;
   background-color: #FFF;
   color: #00adf2 !important;
@@ -295,55 +294,75 @@ li .item.active {
   display: inline-block;
   width: 100%;
   height: 60vh;
-  margin-left: 20%;
   background-image: url('../img/iphone6.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  /*box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.45);*/
 }
 
 /*...........................................*/
 /* ..................PAGE 3..................*/
 /*...........................................*/
 
-
 .page3, .page3 .left a {
   color: #FFF;
   background-color: #ff943b;
 }
 
+/*...........................................*/
+/* ..................PAGE 4..................*/
+/*...........................................*/
+
 .page4 {
+	color: #FFF;
   background-color: #01cc99;
 }
+
+.page4 .col-xs-5 {
+	height: auto;
+	margin-top: 25%;
+}
+
+.page4 .col-xs-6 {
+	height: 100vh;
+}
+
+.page4 .col-xs-6 .ipad-game {
+	margin: 0 auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../img/ipad-game.png');
+  width: 100%;
+  background-size: 75%;
+  background-position: 100% 100%;
+}
+
+/*...........................................*/
+/* ..................PAGE 5..................*/
+/*...........................................*/
 
 .page5 {
   background-color: #076194;
   text-align: center;
 }
-
-.page5 .game-app, .page4 .ipad-game {
-  margin: 0 auto;
-  height: 50%;
-  background-repeat: no-repeat;
+.page5 .up {
+	height: 40vh;
 }
-.page4 .ipad-game {
-  background-image: url('../img/ipad-game.png');
-  width: 60%;
+.page5 .game-app {
+  margin: 0 auto;
   height: 100%;
-  background-size: 50%;
-  background-position: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .page5 .game-app {
   background-image: url('../img/iphone-game.png');
-  width: 40%;
-  background-size: 80%;
+  width: auto;
+  background-size: contain;
   background-position: center;
 }
 
 .page5 .lorem {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -355,5 +374,163 @@ li .item.active {
 }
 
 /*...........................................*/
-/* ..................PAGE 4..................*/
+/* ..................CONTACT FORM..................*/
 /*...........................................*/
+
+
+/* ====================
+   [11] Contact
+==================== */
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+#contact-me {
+ width:100%;
+ padding-bottom: 30px;
+ background-color:#ffffff;
+}
+#contact-me h2.title {
+	font-size: 80px;
+	font-weight: 800;
+	letter-spacing: 8px;
+	color: #2C2C2C;
+	color: #FFF;
+	-webkit-text-stroke: 2px #444;
+	text-align: center;
+	position: relative;
+	margin: 40px 0 100px;
+}
+#contact-me .contact-info{
+    padding:5px 0 5px 50px;
+    position:relative;
+}
+#contact-me .contact-info h4{
+    font-size:20px;
+    font-weight:800;
+}
+#contact-me .contact-info i{
+    position:absolute;
+    top:30px;
+    left:4px;
+    display:inline-block;
+    font-size:30px;
+}
+#contact-me .contact-me-nested {
+  height: auto;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+}
+#contact-me .contact-me-nested input,
+#contact-me .contact-me-nested textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 2px solid #333333;
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+#contact-me .contact-me-nested textarea {
+  font-size: 14px;
+  letter-spacing: 2px;
+  resize: vertical;
+  min-height: 100px;
+}
+#contact-me .contact-me-nested button {
+    display: block;
+    width: 150px;
+    margin: auto;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 2px solid #333333;
+    outline:none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+}
+#contact-me .contact-me-nested button:hover{
+    background-color:#333333;
+    color:#fff;
+}
+#contact-me .contact-me-nested .form-filed-container{
+    padding:20px 0 40px;
+    position:relative;
+}
+#contact-me .contact-me-nested .form-filed-container [class^="error"]{
+    position:absolute;
+    top:5px;
+    text-transform:uppercase;
+    font-size:10px;
+    letter-spacing:4px;
+    display:none;
+}
+.success{
+    width:100%;
+    position:relative;
+    background-color:#e8e8e8;
+    color:#222222;
+    font-size:40px;
+    display:none;
+}
+.success h4 {
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: Raleway,Arial,'Open Sans';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.success h4 span{
+    display:inline-block;
+}
+
+/* ====================
+End Contact
+==================== */
+
+/* ======================
+  [12] footer
+====================== */
+#footer{
+    width:100%;
+    padding:50px 0;
+    background-color:#333333;
+}
+#footer p{
+    margin-bottom:30px;
+    color:#ffffff;
+    font-size:16px;
+}
+#footer a{
+    text-decoration:none;
+    color:#636060;
+}
+#footer .social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 2em;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+/* ======================
+End footer
+====================== */

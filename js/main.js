@@ -10,7 +10,8 @@ $(document).ready(function(){
     menu: '#navbar',
     css3: true,
     scrollingSpeed: 750,
-		// navigation: true,
+		scrollOverflow: true,
+
 		onLeave: function(index, nextIndex, direction){
 			if( index == 1 && direction == 'down' ){
 				$isAnimatedPage2.addClass('animated fadeInUp');
@@ -19,11 +20,13 @@ $(document).ready(function(){
 
 			} else if( index == 2 && direction == 'down' ){
 				$isAnimatedPage3.addClass('animated fadeInUp');
-				$isAnimatedPage3.eq(0).css('animation-delay', '.9s');
-    		$isAnimatedPage3.eq(1).css('animation-delay', '.3s');
+				$isAnimatedPage3.eq(0).css('animation-delay', '.3s');
+    		$isAnimatedPage3.eq(1).css('animation-delay', '.9s');
 
 			} else if( index == 3 && direction == 'down' ) {
-				$isAnimatedPage4.addClass('animated fadeInRight').css('animation-delay', '.3s');
+				$isAnimatedPage4.addClass('animated fadeInRight').css('animation-delay', '.9s');
+				$('.page4 .left').addClass('animated fadeInUp').css('animation-delay', '.3s');
+
 			} else if( index == 4 && direction == 'down' ) {
 				$isAnimatedPage5.addClass('animated fadeInLeft');
 			}
@@ -40,6 +43,15 @@ $(document).ready(function(){
     $('#navbar').toggleClass('active');
     $('.toggle a').toggleClass('active');
   })
+
+	$('.logo a').click(function(){
+
+		if ($('navbar active')) {
+			$('#navbar').removeClass('active');
+			$('.toggle a').removeClass('active');
+		}
+
+	})
 
 });
 
