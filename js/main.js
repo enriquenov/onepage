@@ -30,7 +30,16 @@ $(document).ready(function(){
 			} else if( index == 4 && direction == 'down' ) {
 				$isAnimatedPage5.addClass('animated fadeInLeft');
 			}
-		}
+		},
+
+		afterLoad: function(anchorLink, index){
+        if(index == 6 || index == 7) {
+            $('.menu').css('background-color', '#ededed');
+        }
+        else{
+            $('.menu').css('background-color', '#FFF');
+        }
+    }
 
 	});
 
@@ -45,13 +54,19 @@ $(document).ready(function(){
   })
 
 	$('.logo a').click(function(){
-
 		if ($('navbar active')) {
 			$('#navbar').removeClass('active');
 			$('.toggle a').removeClass('active');
 		}
-
 	})
+
+	$('#wrapper').click(function(){
+		if ($('navbar active')) {
+			$('#navbar').removeClass('active');
+			$('.toggle a').removeClass('active');
+		}
+	})
+
 
 });
 

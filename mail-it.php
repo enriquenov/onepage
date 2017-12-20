@@ -3,7 +3,7 @@
 /* Code by David McKeown - craftedbydavid.com */
 /* Editable entries are bellow */
 
-$send_to = "themes@gmail.com";
+$send_to = "luisenriquenovoa@gmail.com";
 $send_subject = "Ajax form ";
 
 

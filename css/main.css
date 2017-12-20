@@ -57,7 +57,7 @@
 .toggle {
   position: fixed;
   top: 40px;
-  left: 40px;
+  right: 60px;
   z-index: 2;
 }
 .toggle a {
@@ -65,13 +65,13 @@
   color: #FFF;
   font-size: 32px;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.35s ease;
 }
 .toggle a.active {
   color: #262626;
 }
 .toggle a i {
-  transition: all 0.5 ease-in-out;
+  transition: all 0.35 ease-in-out;
 }
 .toggle a i:hover {
   transform: scale(1.1);
@@ -79,7 +79,7 @@
 .logo {
   position: fixed;
   top: 40px;
-  right: 40px;
+  left: 60px;
   z-index: 2;
 }
 .logo a {
@@ -111,9 +111,8 @@
 }
 
 #navbar {
-	top:0px;
-  left: -25%;
-  right: 0px;
+	top: 0px;
+  right: -25%;
   bottom: 0px;
 	position: fixed;
   width: 25%;
@@ -157,7 +156,7 @@ li .item.active {
   color: #FFF!important;
 }
 #navbar.active {
-  left: 0;
+  right: 0;
   overflow: auto;
 }
 
