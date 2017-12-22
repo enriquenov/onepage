@@ -595,10 +595,12 @@ End footer
 		width: 85%;
 	}
 	.logo {
-		left: 40px;
+		top: 20px;
+		left: 30px;
 	}
 	.toggle {
-		right: 40px;
+		top: 20px;
+		right: 30px;
 	}
 	.logo a {
 		font-size: 40px;
