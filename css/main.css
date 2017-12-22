@@ -129,6 +129,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+	width: 95%;
 }
 
 #navbar ul li {
@@ -164,6 +165,10 @@ li .item.active {
 /*...........................................*/
 /* ..................PAGE 1..................*/
 /*...........................................*/
+
+.container {
+	width: 80%;
+}
 
 
 .page1 {
@@ -533,3 +538,136 @@ End Contact
 /* ======================
 End footer
 ====================== */
+
+@media only screen and (max-width: 1366px) {
+	.page1 .box h1 {
+		font-size: 5.2em;
+	}
+	.page1 .footer1 .right ul li img {
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.page1 .box h1 {
+		font-size: 4.8em;
+	}
+	.page1 .footer1 .left p {
+		font-size: 1.1em;
+	}
+	.page1 .footer1 .right ul li img {
+		height: 40px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.page1 .footer1 .left p {
+		font-size: 1em;
+	}
+	.page1 .box p {
+		font-size: 1.2em;
+	}
+	.page1 .box h1 {
+		font-size: 4em;
+	}
+	.page1 .box button {
+		font-size: 1.2em;
+	}
+	.page2 .left h1, .page3 .left h1, .page4 .left h1 {
+		font-size: 3em;
+	}
+	.page2 .left p, .page3 .left p, .page4 .left p {
+		font-size: 1em;
+	}
+	.page2 .left a, .page3 .left a, .page4 .left a {
+		padding: 15px 40px;
+	}
+	#navbar ul li a {
+		font-size: 1em;
+	}
+	.page2 .left, .page3 .left {
+		padding-top: 10vh;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.container {
+		width: 85%;
+	}
+	.logo {
+		left: 40px;
+	}
+	.toggle {
+		right: 40px;
+	}
+	.logo a {
+		font-size: 40px;
+	}
+	#navbar {
+		width: 100%;
+		right: -100%;
+	}
+
+	.page1 .box h1 {
+		font-size: 3em;
+		line-height: 1.2em;
+	}
+	.page1 .box button {
+		font-size: 1em;
+	}
+	.page1 .footer1 .left, .page1 .footer1 .right {
+		display: block;
+		text-align: center;
+	}
+	.page1 .footer1 .right ul {
+		padding-left: 0;
+	}
+	.page1 .footer1 .right ul li img {
+		height: 36px;
+	}
+	.page1 .footer1 .left p {
+		font-size: 0.8em;
+	}
+	.page2 .left, .page3 .left {
+		padding-top: 13vh;
+		padding-bottom: 5vh;
+	}
+	.page2 .right, .page3 .right {
+		height: 35vh;
+	}
+	.page5 .up {
+		padding-top: 10vh;
+	}
+	.page5 .lorem {
+		width: 90%;
+	}
+	#contact-me h2.title {
+		font-size: 40px;
+		margin: 120px 0 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.page1 .box {
+		margin-top: 100px;
+	}
+	.page1 .box h1 {
+		font-size: 2.4em;
+	}
+	.page1 .box button {
+		margin: 20px 0;
+	}
+	.page2 .left p, .page3 .left p, .page4 .left p {
+		margin-bottom: 30px;
+	}
+	.page2 .left h1, .page3 .left h1, .page4 .left h1 {
+		font-size: 2.4em;
+	}
+	.page2 .left a, .page3 .left a, .page4 .left a {
+		padding: 10px 25px;
+	}
+	#contact-me h2.title {
+		font-size: 32px;
+		margin: 120px 0 10px;
+	}
+}
